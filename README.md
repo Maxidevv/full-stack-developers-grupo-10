@@ -240,13 +240,12 @@ El proyecto se encuentra publicado mediante un servicio de hosting estático.
 
 ## 👥 Equipo
 
-Proyecto realizado por un equipo de **5 integrantes**:
+Proyecto realizado por un equipo de **4 integrantes**:
 
-- **[Nombre y apellido del integrante 1]**
-- **[Nombre y apellido del integrante 2]**
-- **[Nombre y apellido del integrante 3]**
-- **[Nombre y apellido del integrante 4]**
-- **[Nombre y apellido del integrante 5]**
+- **Maxi Moncada**
+- **Araceli Mendoza**
+- **Leandro Frette**
+- **Federico Vega**
 
 Todos los integrantes participaron del desarrollo mediante un flujo de trabajo colaborativo utilizando **Git y GitHub**, manteniendo un historial de commits durante el desarrollo del proyecto.
 
@@ -276,28 +275,6 @@ Esto permite mantener un historial claro de cambios y facilita la colaboración 
 
 ---
 
-## 📌 Alcance del proyecto
-
-Este proyecto corresponde a los **Sprints 1 y 2**, por lo que se encuentra enfocado exclusivamente en tecnologías Frontend.
-
-Actualmente:
-
-- ✅ La interfaz está desarrollada con HTML5.
-- ✅ El sitio posee diseño responsive con CSS3.
-- ✅ Los productos se administran localmente con JavaScript.
-- ✅ El contenido se genera dinámicamente mediante DOM.
-- ✅ Se utilizan eventos para la interacción del usuario.
-- ✅ Se implementa validación del formulario de contacto.
-- ✅ Se simula un carrito de compras.
-- ✅ Se utilizan operaciones asíncronas.
-- ❌ No existe conexión con una base de datos.
-- ❌ No existe un backend.
-- ❌ No se procesan compras ni pagos reales.
-
-Estas funcionalidades corresponden a una **simulación de la experiencia de un e-commerce**.
-
----
-
 ## 📚 Objetivos de aprendizaje
 
 Con este proyecto buscamos aplicar de manera práctica los principales conceptos estudiados durante los primeros dos Sprints:
@@ -311,8 +288,6 @@ Con este proyecto buscamos aplicar de manera práctica los principales conceptos
 7. Utilizar operaciones asíncronas para simular la carga de información.
 8. Manejar eventos generados por el usuario.
 9. Trabajar colaborativamente utilizando **Git y GitHub**.
-
----
 
 ## 🎓 Contexto académico
 
