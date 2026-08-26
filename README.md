@@ -1,6 +1,6 @@
 # 🪑 Hermanos Jota | E-commerce de Muebles
 
-Proyecto desarrollado como entrega final de los **Sprints 1 y 2** del curso **Full Stack Developer de ITBA Educación Ejecutiva**, en alianza con **Santander**.
+Proyecto desarrollado como entrega final de los **Sprints 1 y 2** del curso **Full Stack Developer de ITBA Educación Ejecutiva.**
 
 El objetivo del proyecto es construir la fachada completa y la experiencia interactiva de un e-commerce para **Mueblería Hermanos Jota**, utilizando exclusivamente tecnologías del lado del cliente: **HTML, CSS y JavaScript**.
 
