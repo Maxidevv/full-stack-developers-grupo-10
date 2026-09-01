@@ -1,60 +1,131 @@
 <!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mueblería Jota - Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-<header class="jh-header">
-  <div class="jh-header__container">
-    <a href="/" class="jh-header__logo">
-      <img src="assets/images/logo.svg" alt="Los Hermanos Jota">
-    </a>
-    <nav class="jh-header__nav" id="jh-nav">
-      <ul>
-        <li><a href="/productos.html">Productos</a></li>
-          <li><a>|</a></li>
-        <li><a href="/sobre.html">Sobre Nosotros</a></li>
-          <li><a>|</a></li>
-          <li><a href="/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="jh-header__right">
-      <button class="jh-header__cart" id="jh-cart-btn" aria-label="Carrito">
-        <span class="jh-header__cart-icon"></span>
-        <span class="jh-header__cart-count" id="jh-cart-count">0</span>
-      </button>
-      <button class="jh-header__burger" id="jh-burger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header class="jh-header">
+      <div class="jh-header__container">
+        <a href="/" class="jh-header__logo">
+          <img src="assets/images/logo.svg" alt="Los Hermanos Jota" />
+        </a>
+        <nav class="jh-header__nav" id="jh-nav">
+          <ul>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a>|</a></li>
+            <li><a href="/sobre.html">Sobre Nosotros</a></li>
+            <li><a>|</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="jh-header__right">
+          <button class="jh-header__cart" id="jh-cart-btn" aria-label="Carrito">
+            <span class="jh-header__cart-icon"></span>
+            <span class="jh-header__cart-count" id="jh-cart-count">0</span>
+          </button>
+          <button class="jh-header__burger" id="jh-burger" aria-label="Menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-<section class="hero-banner" aria-label="Presentación de la mueblería">
-  <div class="hero-banner__video-container">
-    <video class="hero-banner__video" autoplay muted loop playsinline aria-hidden="true" preload="auto">
-      <source src="assets/video/video%20_institucional%20_hermanosjota.mp4" type="video/mp4">
-      <!-- Fallback: En caso que el video falle, habra una imagen de backup -->
-      <img src="" alt="Muebles: familias creando sus recuerdos" loading="lazy">
-    </video>
-    <div class="hero-banner__overlay" aria-hidden="true"></div>
-    <div class="hero-banner__content">
-      <h1>
-        "No vendemos madera y tela; vendemos el escenario donde las familias crearán sus mejores recuerdos."
-      </h1>
-    </div>
-  </div>
-</section>
+    <section class="hero-banner" aria-label="Presentación de la mueblería">
+      <div class="hero-banner__video-container">
+        <video
+          class="hero-banner__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+          preload="auto"
+        >
+          <source
+            src="assets/video/video%20_institucional%20_hermanosjota.mp4"
+            type="video/mp4"
+          />
+          <!-- Fallback: En caso que el video falle, habra una imagen de backup -->
+          <img
+            src=""
+            alt="Muebles: familias creando sus recuerdos"
+            loading="lazy"
+          />
+        </video>
+        <div class="hero-banner__overlay" aria-hidden="true"></div>
+        <div class="hero-banner__content">
+          <h1>
+            "No vendemos madera y tela; vendemos el escenario donde las familias
+            crearán sus mejores recuerdos."
+          </h1>
+        </div>
+      </div>
+    </section>
 
+    <footer class="jh-footer">
+      <div class="jh-footer__container">
+        <div class="jh-footer__col jh-footer__col--brand">
+          <a href="/" class="jh-footer__logo">
+            <img
+              src="assets/images/logo.svg"
+              alt="Hermanos Jota — Muebles de Herencia"
+            />
+          </a>
+          <span class="jh-footer__tagline"
+            >Artesanía de herencia & conciencia sustentable.</span
+          >
+        </div>
 
+        <div class="jh-footer__col">
+          <ul class="jh-footer__info">
+            <li><span>📍</span> Av. San Juan 2847, San Cristóbal, CABA</li>
+            <li>
+              <span>💬</span>
+              <a
+                href="https://wa.me/541145678900"
+                target="_blank"
+                rel="noopener"
+                >+54 11 4567-8900</a
+              >
+            </li>
+            <li>
+              <span>✉️</span>
+              <a href="mailto:info@hermanosjota.com.ar"
+                >info@hermanosjota.com.ar</a
+              >
+            </li>
+          </ul>
+        </div>
 
+        <div class="jh-footer__col jh-footer__col--right">
+          <span class="jh-footer__badge">🌱 Madera Certificada FSC®</span>
+          <div class="jh-footer__social">
+            <a
+              href="https://instagram.com/hermanosjota_ba"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              @hermanosjota_ba
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="jh-footer__bottom">
+        <p>
+          &copy; 2026 Hermanos Jota. Todos los derechos reservados. — San
+          Cristóbal, CABA.
+        </p>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="js/carrito.js"></script>
-</body>
+  </body>
 </html>
