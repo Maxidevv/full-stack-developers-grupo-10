@@ -34,7 +34,7 @@
 }
 .jh-header__nav a:hover,
 .jh-header__nav a:focus {
-  color: #F5E6D3;
+  color: #C47A6D;
 }
 .jh-header__right {
   display: flex;
@@ -58,7 +58,7 @@
 }
 .jh-header__cart-count {
   background: #A0522D;
-  color: #ffffff;
+  color: #F5E6D3;
   font-size: 0.8rem;
   border-radius: 50%;
   padding: 2px 7px;
