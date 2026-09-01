@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   min-height: 100vh;
   width: 100vw;
-  overflow: hidden;
   background: rgb(17 17 17 / 0.97);
   font-family: "Inter", system-ui, Arial, sans-serif;
 }
@@ -81,7 +81,7 @@ html, body {
 }
 
 .hero-banner__content h1 {
-  color: #F5E6D3;
+  color: #f5e6d3;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   text-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.29);
