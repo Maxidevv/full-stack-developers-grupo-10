@@ -1,0 +1,32 @@
+const catalogo = [
+    {
+        id: '',
+        nombre: '',
+        precio: '',
+        descripcion: '',
+        imagen: '',
+        fabricacion: '',
+        medidas: '',
+        materiales: '',
+        acabado: '',
+        peso: '',
+        capacidad: '',
+        modulares: '',
+        tapizado: '',
+        confort: '',
+        rotacion: '',
+        garantia: '',
+        cargaMaxima: '',
+        Almacenamiento: '',
+        caracteristicas: '',
+        relleno: '',
+        sostenibilidad: '',
+        extension: '',
+        apilables: '',
+        incluye: '',
+        cables: '',
+        regulacion: '',
+        certificacion: '',
+        destacado: true
+    }
+]
