@@ -82,6 +82,7 @@ body {
 
 .hero-banner__content h1 {
   color: #f5e6d3;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   text-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.29);
