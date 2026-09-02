@@ -1,43 +1,153 @@
 <!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mueblería Jota - Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contacto.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
     <header class="jh-header">
-        <div class="jh-header__container">
-            <a href="/" class="jh-header__logo">
-                <img src="assets/images/logo.svg" alt="Los Hermanos Jota">
-            </a>
-            <nav class="jh-header__nav" id="jh-nav">
-                <ul>
-                    <li><a href="/productos.html">Productos</a></li>
-                    <li><a>|</a></li>
-                    <li><a href="/sobre.html">Sobre Nosotros</a></li>
-                    <li><a>|</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="jh-header__right">
-                <button class="jh-header__cart" id="jh-cart-btn" aria-label="Carrito">
-                    <span class="jh-header__cart-icon"></span>
-                    <span class="jh-header__cart-count" id="jh-cart-count">0</span>
-                </button>
-                <button class="jh-header__burger" id="jh-burger" aria-label="Menú">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+      <div class="jh-header__container">
+        <a href="/" class="jh-header__logo">
+          <img src="assets/images/logo.svg" alt="Los Hermanos Jota" />
+        </a>
+        <nav class="jh-header__nav" id="jh-nav">
+          <ul>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a>|</a></li>
+            <li><a href="/sobre.html">Sobre Nosotros</a></li>
+            <li><a>|</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="jh-header__right">
+          <button class="jh-header__cart" id="jh-cart-btn" aria-label="Carrito">
+            <span class="jh-header__cart-icon"></span>
+            <span class="jh-header__cart-count" id="jh-cart-count">0</span>
+          </button>
+          <button class="jh-header__burger" id="jh-burger" aria-label="Menú">
+            <span></span><span></span><span></span>
+          </button>
         </div>
+      </div>
     </header>
+
+    <main class="jh-contact">
+      <div class="jh-contact__container">
+        <header class="jh-contact__header">
+          <h1 class="jh-contact__title">Contacto</h1>
+          <p class="jh-contact__description">
+            ¿Tenés dudas sobre nuestros muebles o querés coordinar una visita a
+            nuestra Casa Taller en San Cristóbal? Escribinos.
+          </p>
+        </header>
+
+        <form class="jh-form" action="#" method="POST" id="jh-contact-form">
+          <div class="jh-form__group">
+            <label for="nombre" class="jh-form__label">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="jh-form__input"
+              placeholder="Ej: Federico Vega"
+              required
+            />
+          </div>
+
+          <div class="jh-form__group">
+            <label for="email" class="jh-form__label">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="jh-form__input"
+              placeholder="ejemplo@email.com"
+              required
+            />
+          </div>
+
+          <div class="jh-form__group">
+            <label for="mensaje" class="jh-form__label">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              class="jh-form__textarea"
+              rows="5"
+              placeholder="Contanos en qué te podemos ayudar..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="jh-form__button">Enviar mensaje</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="jh-footer">
+      <div class="jh-footer__container">
+        <div class="jh-footer__col jh-footer__col--brand">
+          <a href="/" class="jh-footer__logo">
+            <img
+              src="assets/images/logo.svg"
+              alt="Hermanos Jota — Muebles de Herencia"
+            />
+          </a>
+          <span class="jh-footer__tagline"
+            >Artesanía de herencia & conciencia sustentable.</span
+          >
+        </div>
+
+        <div class="jh-footer__col">
+          <ul class="jh-footer__info">
+            <li><span>📍</span> Av. San Juan 2847, San Cristóbal, CABA</li>
+            <li>
+              <span>💬</span>
+              <a
+                href="https://wa.me/541145678900"
+                target="_blank"
+                rel="noopener"
+                >+54 11 4567-8900</a
+              >
+            </li>
+            <li>
+              <span>✉️</span>
+              <a href="mailto:info@hermanosjota.com.ar"
+                >info@hermanosjota.com.ar</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="jh-footer__col jh-footer__col--right">
+          <span class="jh-footer__badge">🌱 Madera Certificada FSC®</span>
+          <div class="jh-footer__social">
+            <a
+              href="https://instagram.com/hermanosjota_ba"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              @hermanosjota_ba
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="jh-footer__bottom">
+        <p>
+          &copy; 2026 Hermanos Jota. Todos los derechos reservados. — San
+          Cristóbal, CABA.
+        </p>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/contacto.js"></script>
-</body>
+  </body>
 </html>
