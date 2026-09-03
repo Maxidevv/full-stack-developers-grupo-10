@@ -46,7 +46,22 @@
           </p>
         </header>
 
-        <form class="jh-form" action="#" method="POST" id="jh-contact-form">
+        <div
+          id="jh-success-message"
+          class="jh-form__alert jh-form__alert--success"
+          style="display: none"
+          role="status"
+        >
+          ¡Gracias por tu mensaje! Nos pondremos en contacto a la brevedad.
+        </div>
+
+        <form
+          class="jh-form"
+          action="#"
+          method="POST"
+          id="jh-contact-form"
+          novalidate
+        >
           <div class="jh-form__group">
             <label for="nombre" class="jh-form__label">Nombre completo</label>
             <input
@@ -55,8 +70,8 @@
               name="nombre"
               class="jh-form__input"
               placeholder="Ej: Federico Vega"
-              required
             />
+            <span class="jh-form__error" id="error-nombre"></span>
           </div>
 
           <div class="jh-form__group">
@@ -67,8 +82,8 @@
               name="email"
               class="jh-form__input"
               placeholder="ejemplo@email.com"
-              required
             />
+            <span class="jh-form__error" id="error-email"></span>
           </div>
 
           <div class="jh-form__group">
@@ -79,8 +94,8 @@
               class="jh-form__textarea"
               rows="5"
               placeholder="Contanos en qué te podemos ayudar..."
-              required
             ></textarea>
+            <span class="jh-form__error" id="error-mensaje"></span>
           </div>
 
           <button type="submit" class="jh-form__button">Enviar mensaje</button>

@@ -110,6 +110,30 @@
   transform: scale(0.99);
 }
 
+.jh-form__error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.jh-form__input--error {
+  border-color: #ff6b6b !important;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2) !important;
+}
+
+.jh-form__alert--success {
+  background-color: rgba(135, 169, 107, 0.15);
+  border: 1px solid #87a96b;
+  color: #f5e6d3;
+  padding: 1.25rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 600px) {
   .jh-contact {
     padding: 2.5rem 1rem;
