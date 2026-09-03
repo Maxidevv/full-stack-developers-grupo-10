@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap");
+
+.jh-footer {
+  background-color: #111111;
+  color: #f5e6d3; /* Alabastro Cálido (Manual de Marca) */
+  border-top: 1px solid #222222;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  padding: 3rem 0 0;
+  width: 100%;
+}
+
+.jh-footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.jh-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.jh-footer__col--right {
+  align-items: flex-end;
+}
+
+.jh-footer__logo img {
+  height: 38px;
+  display: block;
+}
+
+.jh-footer__tagline {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-top: 0.2rem;
+}
+
+.jh-footer__info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.jh-footer__info li {
+  color: #cccccc;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jh-footer__info a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.jh-footer__info a:hover {
+  color: #f5e6d3;
+}
+
+.jh-footer__badge {
+  font-size: 0.78rem;
+  color: #87a96b;
+  background-color: rgba(135, 169, 107, 0.1);
+  border: 1px solid rgba(135, 169, 107, 0.25);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+
+.jh-footer__social a {
+  color: #f5e6d3;
+  background-color: #1a1a1a;
+  border: 1px solid #222222;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.jh-footer__social a:hover {
+  background-color: #a0522d;
+  border-color: #a0522d;
+  color: #ffffff;
+}
+
+.jh-footer__bottom {
+  border-top: 1px solid #222222;
+  background-color: #0a0a0a;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.jh-footer__bottom p {
+  color: #666666;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+@media (max-width: 870px) {
+  .jh-footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.8rem;
+  }
+
+  .jh-footer__col--right {
+    align-items: center;
+  }
+
+  .jh-footer__info {
+    align-items: center;
+  }
+}

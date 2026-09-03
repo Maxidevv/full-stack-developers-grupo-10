@@ -1,0 +1,132 @@
+.jh-header {
+  background: #111;
+  border-bottom: 1px solid #222;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.jh-header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+}
+.jh-header__logo img {
+  height: 40px;
+}
+.jh-header__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+.jh-header__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.jh-header__nav a:hover,
+.jh-header__nav a:focus {
+  color: #C47A6D;
+}
+.jh-header__right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.jh-header__cart {
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+.jh-header__cart-icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../assets/images/cart.png") center center/contain no-repeat;
+  vertical-align: middle;
+}
+.jh-header__cart-count {
+  background: #A0522D;
+  color: #F5E6D3;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 2px 7px;
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  font-weight: bold;
+  min-width: 1.3em;
+  text-align: center;
+  line-height: 1.1;
+}
+.jh-header__burger {
+  background: none;
+  border: none;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.jh-header__burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 870px) {
+  .jh-header__nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    border-bottom: 1px solid #222;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    transform: translateY(-120%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.23s cubic-bezier(0.47, 0, 0.75, 0.72);
+    z-index: 99;
+  }
+  .jh-header__nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .jh-header__nav ul {
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 2rem 0;
+    align-items: center;
+  }
+  .jh-header__right {
+    gap: 0.5rem;
+  }
+  .jh-header__cart-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .jh-header__cart-count {
+    top: -9px;
+    right: -10px;
+  }
+  .jh-header__burger {
+    display: flex;
+  }
+}
