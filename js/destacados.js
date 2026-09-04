@@ -42,7 +42,7 @@ function crearCard(producto) {
   // Ver detalle
   const link = document.createElement("a");
   link.className = "card-producto__detalle";
-  link.href = producto.id ? `detalle.html?id=${producto.id}` : "#";
+  link.href = producto.id ? `producto.html?id=${producto.id}` : "#";
   link.textContent = "Ver detalle";
   link.setAttribute("role", "button");
   link.setAttribute("tabindex", "0");

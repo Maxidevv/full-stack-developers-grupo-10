@@ -57,3 +57,59 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cargarCatalogo();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const detalleContainer = document.getElementById("jh-detalle-producto");
+  if (!detalleContainer) return;
+
+  const loader = document.getElementById("jh-detalle-loader");
+  const errorBox = document.getElementById("jh-detalle-error");
+  const img = document.getElementById("jh-detalle-img");
+  const nombre = document.getElementById("jh-detalle-nombre");
+  const precio = document.getElementById("jh-detalle-precio");
+  const descripcion = document.getElementById("jh-detalle-descripcion");
+  const fabricacion = document.getElementById("jh-detalle-fabricacion");
+  const addCartBtn = document.getElementById("jh-detalle-add-cart");
+
+  function mostrarError() {
+    if (loader) loader.style.display = "none";
+    if (errorBox) errorBox.classList.add("jh-detalle__error--visible");
+  }
+
+  function renderDetalle() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const producto = productos.find((p) => p.id === id);
+
+    if (!producto) {
+      mostrarError();
+      return;
+    }
+
+    if (loader) loader.style.display = "none";
+    detalleContainer.classList.add("jh-detalle__producto--visible");
+
+    if (img) {
+      img.src = producto.imagen;
+      img.alt = `Imagen de ${producto.nombre}`;
+    }
+    if (nombre) nombre.textContent = producto.nombre;
+    if (precio) {
+      precio.textContent = `$${producto.precio.toLocaleString("es-AR")}`;
+    }
+    if (descripcion) descripcion.textContent = producto.descripcion;
+    if (fabricacion) {
+      fabricacion.textContent = producto.detallesFabricacion;
+    }
+
+    document.title = `${producto.nombre} - Mueblería Jota`;
+
+    if (addCartBtn) {
+      addCartBtn.addEventListener("click", () => {
+        window.addToCart(producto.id);
+      });
+    }
+  }
+
+  setTimeout(renderDetalle, 800);
+});
