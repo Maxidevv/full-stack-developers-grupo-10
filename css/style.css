@@ -8,11 +8,19 @@
 
 html,
 body {
-  height: 100vh;
   min-height: 100vh;
   width: 100vw;
   background: rgb(17 17 17 / 0.97);
   font-family: "Inter", system-ui, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .hero-banner {
@@ -88,6 +96,7 @@ body {
   text-shadow: 0 1.5px 8px rgba(0, 0, 0, 0.29);
   line-height: 1.24;
   letter-spacing: -0.02em;
+  position: relative;
 }
 
 @media (max-width: 600px) {
@@ -106,7 +115,7 @@ body {
 
 .jh-productos-mas {
   max-width: 580px;
-  margin: 2.5rem auto 0;
+  margin: 0.8rem auto 0;
   padding: 1.4rem 1.8rem;
   text-align: center;
   color: #f5e6d3;
@@ -130,5 +139,5 @@ body {
 .jh-productos-mas a:hover,
 .jh-productos-mas a:focus {
   color: #d6a05e;
-  border-bottom-color: #d6a05e;
+  border-bottom-color: transparent;
 }
