@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mueblería Jota - Inicio</title>
+    <title>Mueblería Jota - Detalle de Producto</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/productos.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/detalle-producto.css" />
   </head>
   <body>
     <header class="jh-header">
@@ -36,46 +36,44 @@
       </div>
     </header>
 
-    <section class="hero-banner" aria-label="Presentación de la mueblería">
-      <div class="hero-banner__video-container">
-        <video
-          class="hero-banner__video"
-          autoplay
-          muted
-          loop
-          playsinline
-          aria-hidden="true"
-          preload="auto"
-        >
-          <source
-            src="assets/video/video%20_institucional%20_hermanosjota.mp4"
-            type="video/mp4"
-          />
-          <!-- Fallback: En caso que el video falle, habra una imagen de backup -->
-          <img
-            src=""
-            alt="Muebles: familias creando sus recuerdos"
-            loading="lazy"
-          />
-        </video>
-        <div class="hero-banner__overlay" aria-hidden="true"></div>
-        <div class="hero-banner__content">
-          <h1>
-            No vendemos madera y tela; vendemos el escenario donde las familias
-            crearán sus mejores recuerdos.
-          </h1>
-        </div>
+    <main class="jh-detalle">
+      <div id="jh-detalle-loader" class="jh-detalle__loader" role="status">
+        <div class="jh-detalle__spinner"></div>
+        <p>Cargando producto...</p>
       </div>
-    </section>
-    <section
-      id="productos-destacados"
-      aria-labelledby="productos-destacados-title"
-    ></section>
 
-    <p class="jh-productos-mas">
-      ¿Quieres ver más de nuestros productos?
-      <a href="productos.html">¡Revisa nuestro catálogo completo!</a>
-    </p>
+      <div id="jh-detalle-producto" class="jh-detalle__producto">
+        <article class="jh-detalle__grid">
+          <img
+            id="jh-detalle-img"
+            class="jh-detalle__imagen"
+            src=""
+            alt=""
+          />
+          <div class="jh-detalle__info">
+            <h1 id="jh-detalle-nombre" class="jh-detalle__nombre"></h1>
+            <p id="jh-detalle-precio" class="jh-detalle__precio"></p>
+            <p id="jh-detalle-descripcion" class="jh-detalle__descripcion"></p>
+            <p id="jh-detalle-fabricacion" class="jh-detalle__fabricacion"></p>
+            <p class="jh-detalle__contacto">
+              ¿Tienes alguna duda puntual de este producto?
+              <a href="contacto.html">Contactanos.</a>
+            </p>
+            <hr class="jh-detalle__divider" />
+            <button
+              id="jh-detalle-add-cart"
+              class="jh-detalle__add-cart"
+              type="button"
+            >
+              Añadir al carrito
+            </button>          </div>
+        </article>
+      </div>
+
+      <div id="jh-detalle-error" class="jh-detalle__error" role="alert">
+        Producto no encontrado
+      </div>
+    </main>
 
     <footer class="jh-footer">
       <div class="jh-footer__container">
@@ -86,9 +84,9 @@
               alt="Hermanos Jota — Muebles de Herencia"
             />
           </a>
-          <span class="jh-footer__tagline"
-            >Artesanía de herencia & conciencia sustentable.</span
-          >
+          <span class="jh-footer__tagline">
+            Artesanía de herencia & conciencia sustentable.
+          </span>
         </div>
 
         <div class="jh-footer__col">
@@ -100,14 +98,15 @@
                 href="https://wa.me/541145678900"
                 target="_blank"
                 rel="noopener"
-                >+54 11 4567-8900</a
               >
+                +54 11 4567-8900
+              </a>
             </li>
             <li>
               <span>✉️</span>
-              <a href="mailto:info@hermanosjota.com.ar"
-                >info@hermanosjota.com.ar</a
-              >
+              <a href="mailto:info@hermanosjota.com.ar">
+                info@hermanosjota.com.ar
+              </a>
             </li>
           </ul>
         </div>
@@ -137,6 +136,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/carrito.js"></script>
-    <script type="module" src="js/destacados.js"></script>
+    <script type="module" src="js/producto.js"></script>
   </body>
 </html>
