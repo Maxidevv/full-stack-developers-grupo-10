@@ -103,3 +103,32 @@ body {
     font-size: 1.2rem;
   }
 }
+
+.jh-productos-mas {
+  max-width: 580px;
+  margin: 2.5rem auto 0;
+  padding: 1.4rem 1.8rem;
+  text-align: center;
+  color: #f5e6d3;
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.jh-productos-mas a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #f7c784;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.jh-productos-mas a:hover,
+.jh-productos-mas a:focus {
+  color: #d6a05e;
+  border-bottom-color: #d6a05e;
+}
