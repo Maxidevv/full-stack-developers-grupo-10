@@ -3,6 +3,9 @@ import { productos } from "./productos.js";
 document.addEventListener("DOMContentLoaded", () => {
   const catalogGrid = document.getElementById("jh-catalog-grid");
   const catalogLoader = document.getElementById("jh-catalog-loader");
+  const searchInput = document.getElementById("jh-product-search");
+
+  let todosLosProductos = [];
 
   if (!catalogGrid) return;
 
@@ -23,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (catalogLoader) catalogLoader.style.display = "flex";
       catalogGrid.style.display = "none";
 
-      const lista = await obtenerProductosAPI();
+      todosLosProductos = await obtenerProductosAPI();
 
       if (catalogLoader) catalogLoader.style.display = "none";
       catalogGrid.style.display = "grid";
 
-      renderizarTarjetas(lista);
+      renderizarTarjetas(todosLosProductos);
     } catch (error) {
       console.error(error);
       if (catalogLoader) {
@@ -39,6 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderizarTarjetas(items) {
     catalogGrid.innerHTML = "";
+
+    if (items.length === 0) {
+      catalogGrid.innerHTML = `
+        <div class="jh-catalog__empty">
+          <p>No se encontraron productos que coincidan con tu búsqueda.</p>
+        </div>
+      `;
+      return;
+    }
 
     items.forEach((prod) => {
       const card = document.createElement("article");
@@ -52,6 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       catalogGrid.appendChild(card);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      const termino = e.target.value.toLowerCase().trim();
+
+      const productosFiltrados = todosLosProductos.filter((prod) =>
+        prod.nombre.toLowerCase().includes(termino),
+      );
+
+      renderizarTarjetas(productosFiltrados);
     });
   }
 
