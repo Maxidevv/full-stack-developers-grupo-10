@@ -49,6 +49,47 @@
   animation: spin 0.8s linear infinite;
 }
 
+.jh-search-container {
+  margin-top: 1.5rem;
+  max-width: 480px;
+}
+
+.jh-search-input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  background-color: #22211d;
+  border: 1.5px solid #393729;
+  border-radius: 30px;
+  color: #f5e6d3;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.jh-search-input::placeholder {
+  color: #8c8275;
+}
+
+.jh-search-input:focus {
+  border-color: #f7c784;
+  box-shadow: 0 0 10px rgba(247, 199, 132, 0.15);
+}
+
+.jh-catalog__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #d4c5b3;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  background: #22211d;
+  border: 1px dashed #393729;
+  border-radius: 12px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
