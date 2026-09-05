@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${prod.imagen}" alt="${prod.nombre}" class="card-producto__img" loading="lazy" />
         <h3 class="card-producto__nombre">${prod.nombre}</h3>
         <p class="card-producto__precio">$${prod.precio.toLocaleString("es-AR")}</p>
-        <a href="/producto.html?id=${prod.id}" class="card-producto__detalle">Ver detalle</a>
+        <a href="producto.html?id=${prod.id}" class="card-producto__detalle">Ver detalle</a>
       `;
 
       catalogGrid.appendChild(card);
