@@ -1,12 +1,12 @@
-# 🪑 Hermanos Jota | E-commerce de Muebles
+# Hermanos Jota | Empresa de Muebles
 
-Proyecto desarrollado como entrega final de los **Sprints 1 y 2** del curso **Full Stack Developer de ITBA Educación Ejecutiva.**
+Proyecto desarrollado como entrega final de los **Sprints 1 y 2** del curso **Full Stack Developer de ITBA Educación Ejecutiva**.
 
 El objetivo del proyecto es construir la fachada completa y la experiencia interactiva de un e-commerce para **Mueblería Hermanos Jota**, utilizando exclusivamente tecnologías del lado del cliente: **HTML, CSS y JavaScript**.
 
 ---
 
-## 📖 Sobre Hermanos Jota
+## Sobre Hermanos Jota
 
 **Hermanos Jota** representa una mueblería vinculada al oficio de la madera, la tradición familiar y el trabajo artesanal.
 
@@ -16,7 +16,7 @@ A partir de esta identidad, nuestro equipo desarrolló una experiencia web que b
 
 ---
 
-## 🎯 Objetivo del proyecto
+## Objetivo del proyecto
 
 Desarrollar un sitio web de e-commerce que permita a los usuarios:
 
@@ -28,13 +28,13 @@ Desarrollar un sitio web de e-commerce que permita a los usuarios:
 - Contactarse con la mueblería mediante un formulario.
 - Navegar correctamente desde dispositivos móviles, tablets y computadoras.
 
-El proyecto simula una experiencia de compra **sin conexión a un backend**, por lo que toda la información y lógica se gestiona localmente mediante JavaScript.
+El proyecto simula una experiencia de compra **sin conexión a un backend**, por lo que toda la información y la lógica se gestionan localmente mediante JavaScript.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-### 🏠 Página de inicio
+### Página de inicio
 
 La página principal incluye:
 
@@ -48,7 +48,13 @@ Los productos destacados son generados mediante **JavaScript y manipulación del
 
 ---
 
-### 🛋️ Catálogo de productos
+### Sobre nosotros
+
+La página "Sobre Nosotros" presenta la historia de la empresa: su origen como un taller de carpintería familiar en 1960, la tradición transmitida entre generaciones y los valores de dedicación, oficio y respeto por la materia prima que definen la identidad de la marca.
+
+---
+
+### Catálogo de productos
 
 El catálogo permite visualizar los muebles disponibles mediante una grilla de tarjetas.
 
@@ -58,15 +64,15 @@ Cada producto contiene información como:
 - Imagen.
 - Precio.
 - Descripción.
-- Información correspondiente al producto.
+- Información adicional sobre el producto.
 
-Los datos son administrados mediante un **Array de Objetos en JavaScript** y renderizados dinámicamente en el DOM.
+Los datos son administrados mediante un **array de objetos en JavaScript** y renderizados dinámicamente en el DOM.
 
 Además, se incluye una funcionalidad de **búsqueda de productos** para facilitar la navegación dentro del catálogo.
 
 ---
 
-### 🔎 Detalle de producto
+### Detalle de producto
 
 Cada producto cuenta con su propia vista de detalle, donde el usuario puede consultar:
 
@@ -76,11 +82,11 @@ Cada producto cuenta con su propia vista de detalle, donde el usuario puede cons
 - Detalles de fabricación.
 - Precio.
 
-También dispone de un botón **“Añadir al carrito”**, que permite simular la selección de productos.
+También dispone de un botón **"Añadir al carrito"**, que permite simular la selección de productos.
 
 ---
 
-### 🛒 Carrito simulado
+### Carrito simulado
 
 El proyecto implementa una simulación básica de carrito de compras.
 
@@ -94,7 +100,7 @@ Esta funcionalidad tiene como objetivo practicar **eventos, lógica de programac
 
 ---
 
-### 📩 Formulario de contacto
+### Formulario de contacto
 
 La sección de contacto permite ingresar:
 
@@ -108,7 +114,7 @@ Cuando los datos son válidos, se muestra dinámicamente un mensaje de confirmac
 
 ---
 
-## 🧠 Conceptos aplicados
+## Conceptos aplicados
 
 Durante el desarrollo del proyecto se trabajaron conceptos fundamentales de desarrollo web Frontend.
 
@@ -146,7 +152,7 @@ Durante el desarrollo del proyecto se trabajaron conceptos fundamentales de desa
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología | Uso |
 |---|---|
@@ -158,49 +164,87 @@ Durante el desarrollo del proyecto se trabajaron conceptos fundamentales de desa
 
 ---
 
-## 📱 Responsive Design
+## Responsive Design
 
 El proyecto fue desarrollado siguiendo una estrategia **Mobile First**.
 
 La interfaz se adapta a diferentes tamaños de pantalla para brindar una experiencia adecuada en:
 
-- 📱 Smartphones
-- 📱 Tablets
-- 💻 Notebooks
-- 🖥️ Escritorio
+- Smartphones
+- Tablets
+- Notebooks
+- Escritorio
 
 Para ello se utilizaron principalmente **Flexbox y Media Queries**.
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```text
-hermanos-jota/
+muebleria-jota/
 │
-├── index.html
-├── productos.html
-├── producto.html
-├── contacto.html
+├── .github/
+│   └── pull_request_template.md
 │
-├── css/
-│   └── styles.css
-│
-├── js/
-│   ├── productos.js
-│   └── main.js
+├── .idea/
+│   ├── .gitignore
+│   ├── modules.xml
+│   ├── muebleria-jota.iml
+│   ├── vcs.xml
+│   └── workspace.xml
 │
 ├── assets/
-│   └── images/
+│   ├── images/
+│   │   ├── Aparador Uspallata.png
+│   │   ├── Biblioteca Recoleta.png
+│   │   ├── Butaca Mendoza.png
+│   │   ├── cart.png
+│   │   ├── Escritorio Costa.png
+│   │   ├── logo.svg
+│   │   ├── Mesa Comedor Pampa.png
+│   │   ├── Mesa de Centro Araucaria.png
+│   │   ├── Mesa de Noche Aconcagua.png
+│   │   ├── Silla de Trabajo Belgrano.png
+│   │   ├── Sillas Córdoba.png
+│   │   ├── Sillón Copacabana.png
+│   │   └── Sofá Patagonia.png
+│   └── video/
+│       └── video _institucional _hermanosjota.mp4
 │
+├── css/
+│   ├── contacto.css
+│   ├── detalle-producto.css
+│   ├── footer.css
+│   ├── header.css
+│   ├── main.css
+│   ├── producto.css
+│   ├── productos.css
+│   ├── sobre.css
+│   └── style.css
+│
+├── js/
+│   ├── carrito.js
+│   ├── contacto.js
+│   ├── destacados.js
+│   ├── main.js
+│   ├── producto.js
+│   └── productos.js
+│
+├── contacto.html
+├── index.html
+├── producto.html
+├── productos.html
+├── sobre.html
+│
+├── CONTRIBUTING.md
+├── .gitignore
 └── README.md
 ```
 
-> La estructura puede variar ligeramente según la organización final del equipo.
-
 ---
 
-## 🚀 Ejecución del proyecto
+## Ejecución del proyecto
 
 Al tratarse de un proyecto desarrollado únicamente con tecnologías del lado del cliente, no requiere instalación de dependencias.
 
@@ -230,28 +274,27 @@ También puede ejecutarse utilizando una extensión como **Live Server**.
 
 ---
 
-## 🌐 Demo
+## Demo
 
-El proyecto se encuentra publicado mediante un servicio de hosting estático.
+El proyecto se encuentra publicado mediante un servicio de hosting estático en GitHub Pages.
 
-🔗 **Sitio web:** [Agregar URL del sitio desplegado]
+**Sitio web:** https://maxidevv.github.io/full-stack-developers-grupo-10/
 
 ---
 
-## 👥 Equipo
+## Equipo
 
-Proyecto realizado por un equipo de **4 integrantes**:
+Proyecto realizado por un equipo de desarrollo:
 
 - **Maxi Moncada**
 - **Araceli Mendoza**
-- **Leandro Frette**
 - **Federico Vega**
 
 Todos los integrantes participaron del desarrollo mediante un flujo de trabajo colaborativo utilizando **Git y GitHub**, manteniendo un historial de commits durante el desarrollo del proyecto.
 
 ---
 
-## 🌿 Flujo de trabajo con Git
+## Flujo de trabajo con Git
 
 Para organizar el desarrollo colaborativo utilizamos Git y GitHub como herramientas de control de versiones.
 
@@ -275,7 +318,7 @@ Esto permite mantener un historial claro de cambios y facilita la colaboración 
 
 ---
 
-## 📚 Objetivos de aprendizaje
+## Objetivos de aprendizaje
 
 Con este proyecto buscamos aplicar de manera práctica los principales conceptos estudiados durante los primeros dos Sprints:
 
@@ -289,7 +332,7 @@ Con este proyecto buscamos aplicar de manera práctica los principales conceptos
 8. Manejar eventos generados por el usuario.
 9. Trabajar colaborativamente utilizando **Git y GitHub**.
 
-## 🎓 Contexto académico
+## Contexto académico
 
 Proyecto realizado para:
 
